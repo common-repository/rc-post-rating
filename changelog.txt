@@ -1,0 +1,29 @@
+# Changelog 
+
+## 1.0.9
+
+- Added some fields which can be used to aid accessibility of the rating widget. There is an `ARIA Labelledby value` field which can be used to associate the rating widget with an HTML element. There are two `additional assistive text` fields can be used to add text which is only `visible` to screen-reader users, these will add span elements with a class of `show-for-sr` to the default `a` anchor button type or will add an `aria-label` with a combination of the regular label and the additional assistive text label to the `button` type, note that you will need to add appropriate CSS styles to render these as hidden to visual users but accessible by screen-reader users.
+
+
+## 1.0.8
+
+- Fixed an issue with version numbering of JS and CSS files which was causing some rendering issues after updating to 1.0.7
+- Updated Readme to provide more details about using the new `type="button"` parameter in the shortcode.
+
+## 1.0.7
+
+- Added an optional `type` parameter to the shortcode to render vote buttons as actual HTML `button` elements instead of the default `a` elements, using `button` elements can be an improvement to accessibility.
+- Fixed an error that occurred when using PHP8.1 which caused the plugin settings screen to not display.
+- Fixed some other PHP8.1 compatibility issues
+
+## 1.0.6
+
+- Fixed an issue where only votes for Pages and Posts but not custom post type were being displayed in the Dashboard widget.
+
+## 1.0.5
+
+- Various changes / improvements to code to meet requirements for submission to WordPress.org plugin directory. Updated function prefixes, increased escaping of output and change of text-domain to match plugin slug.
+
+## 1.0.4
+
+- Initial plugin build.
